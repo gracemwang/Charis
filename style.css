@@ -1,60 +1,307 @@
-* {
-    font-family: Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700");
+html {
+  overflow-x: hidden;
 }
 
-.header {
-    text-align: center;
+body {
+  background: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #212121;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
 }
 
-#places {
-    padding: 30px;
-    padding-top: 0px;
-    list-style-type: none;
-    position: relative;
-    visibility: hidden;
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
-#places img {
-    width: 200px;
-    padding-bottom: 30px;
+h1 {
+  font-size: 60px;
 }
 
-#place .text {
-    padding: 50px;
-    vertical-align: top;
+h2 {
+  font-size: 30px;
+  margin-top: -10px;
 }
 
-#place a {
-    text-align: center;
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
-#searchBar {
-    text-align: center;
-    /* margin: 0 auto;
-    display: block; */
+a:hover {
+  text-decoration: none;
 }
 
-#searchBar .bar {
-    text-align: center;
-    height: 20px;
-    margin: 0px;
+a a:focus {
+  outline: none;
 }
 
-#searchBar .search {
-    text-align: center;
-    padding: 0px 0px;
-    margin: 0px;
-    background: #444444;
-    color: white;
-    font-size: 10px;
-    border: none;
-    /* border: 1px solid grey; */
-    cursor: pointer;
-    display: inline-block;
+p {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  font-size: 14px;
 }
 
-#searchBar .sText {
-    padding: 0px;
-    margin: 7px;
+ul, ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
 }
 
+ul li, ol li {
+  list-style: none;
+}
+
+/* nav bar css*/
+nav {
+  top: 0px;
+  margin-left: 10%;
+  margin-right: 0%;
+  justify-content: space-between;
+  margin-top: -10px;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: auto; 
+  margin-right: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  padding: 1em;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+header {
+  background-color: #009191; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-radius: 20px;
+}
+
+/* #smoke {
+  background: url(whitewave.png) no-repeat;
+    background-image: url(whitewave.png), initial;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat-x: no-repeat, initial;
+    background-repeat-y: no-repeat, initial;
+    background-attachment: initial, initial;
+    background-origin: initial, initial;
+    background-clip: initial, initial;
+    background-size: 500px, 1000px;
+    background-position: bottom;
+    padding-bottom: 100px;
+    color: #fff;
+}*/
+
+#intro-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+#subscribe {
+  background-color: #0093E9;
+  padding: 20px 50px;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition: 0.25s
+
+}
+
+#aboutus {
+  background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  padding-top: 100px;
+}
+
+#aboutus h2 h3{
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+#aboutus p{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  justify-content: center;
+  text-align: center;
+}
+
+#learnmore {
+  margin-top:30px ;
+  background-color: #0093E9;
+  padding: 15px 45px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+#footer {
+background-color: #103D6B;
+margin-top: 100px;
+justify-content:space-evenly ;
+text-align: center: ;
+padding-top: 10px;
+color: #8EC5FC;
+font-size: 20px;
+padding: 15px 45px;
+}
+
+#footer i {
+  font-size:60px;
+  padding-right: 20px;
+  
+}
+
+
+#find {
+  background-color: #8EC5FC; 
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 100px 0px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 0px;
+  padding-top: 100px;
+}
+
+
+
+
+.box{
+  background-color: #0093E9;
+  border-radius: 20px;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.box p{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  justify-content: center;
+  text-align: center;
+  color:aliceblue;
+}
+
+.box h3{
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px; 
+  justify-content: center;
+  text-align: center;
+  color:aliceblue;
+}
+
+
+.main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+        }
+
+form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #b1b1b1; 
+      background: #f5f5f5; 
+      }
+
+#submit {
+  background-color: #0093E9;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  font-size: 10px;
+ 
+}
+
+#logo {
+  width: 20%;
+  margin-top: -10px;
+}
+
+#dying {
+margin-top:30px ;
+  background-color: #0093E9;
+  padding: 15px 45px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+#dying2 {
+ margin-top:30px ;
+  background-color: #8EC5FC;
+  padding: 15px 45px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #0093E9;
+  padd
+
+}
